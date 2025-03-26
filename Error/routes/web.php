@@ -7,4 +7,8 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-Route::resource('/', ErrorController ::class);
+Route::resource('/', ErrorController::class);
+
+Route::get('/test', function () {
+    return view('ErrorIndex');
+})->name('test');
